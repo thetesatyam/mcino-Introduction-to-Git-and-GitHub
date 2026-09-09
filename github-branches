@@ -1,0 +1,18 @@
+PS C:\Users\ADMIN\Downloads\mcino-Introduction-to-Git-and-GitHub> cd C:\Users\ADMIN\Downloads\mcino-Introduction-to-Git-and-GitHub
+PS C:\Users\ADMIN\Downloads\mcino-Introduction-to-Git-and-GitHub> git branch
+* bug-fix-revert
+  bug-fix-typo
+  main
+PS C:\Users\ADMIN\Downloads\mcino-Introduction-to-Git-and-GitHub> git branch -a
+* bug-fix-revert
+  bug-fix-typo
+  main
+  remotes/origin/HEAD -> origin/main
+  remotes/origin/main
+PS C:\Users\ADMIN\Downloads\mcino-Introduction-to-Git-and-GitHub> git status
+
+On branch bug-fix-revert
+nothing to commit, working tree clean
+PS C:\Users\ADMIN\Downloads\mcino-Introduction-to-Git-and-GitHub>
+
+
