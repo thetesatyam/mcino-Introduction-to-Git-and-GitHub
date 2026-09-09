@@ -1,0 +1,77 @@
+PS C:\Users\ADMIN\Downloads> git clone https://github.com/thetesatyam/mcino-Introduction-to-Git-and-GitHub.git
+Cloning into 'mcino-Introduction-to-Git-and-GitHub'...
+remote: Enumerating objects: 38, done.
+remote: Counting objects: 100% (3/3), done.
+remote: Compressing objects: 100% (3/3), done.
+remote: Total 38 (delta 0), reused 0 (delta 0), pack-reused 35 (from 1)
+Receiving objects: 100% (38/38), 20.78 KiB | 1.38 MiB/s, done.
+Resolving deltas: 100% (6/6), done.
+PS C:\Users\ADMIN\Downloads> cd mcino-Introduction-to-Git-and-GitHub
+PS C:\Users\ADMIN\Downloads\mcino-Introduction-to-Git-and-GitHub> git branch
+* main
+PS C:\Users\ADMIN\Downloads\mcino-Introduction-to-Git-and-GitHub> git checkout main
+Already on 'main'
+Your branch is up to date with 'origin/main'.
+PS C:\Users\ADMIN\Downloads\mcino-Introduction-to-Git-and-GitHub> git merge bug-fix-typo
+merge: bug-fix-typo - not something we can merge
+PS C:\Users\ADMIN\Downloads\mcino-Introduction-to-Git-and-GitHub> git fetch --all
+PS C:\Users\ADMIN\Downloads\mcino-Introduction-to-Git-and-GitHub> git branch -a
+* main
+  remotes/origin/HEAD -> origin/main
+  remotes/origin/main
+PS C:\Users\ADMIN\Downloads\mcino-Introduction-to-Git-and-GitHub> dir
+
+
+    Directory: C:\Users\ADMIN\Downloads\mcino-Introduction-to-Git-and-GitHub
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----          9/9/2026  11:08 PM                .github
+-a----          9/9/2026  11:08 PM           1928 .gitignore
+-a----          9/9/2026  11:08 PM           5330 CODE_OF_CONDUCT.md
+-a----          9/9/2026  11:08 PM            700 compound_interest.py
+-a----          9/9/2026  11:08 PM            109 CONTRIBUTING.md
+-a----          9/9/2026  11:08 PM          23946 forked-repo
+-a----          9/9/2026  11:08 PM          11559 LICENSE
+-a----          9/9/2026  11:08 PM            344 README.md
+-a----          9/9/2026  11:08 PM            597 simple-interest.sh
+
+
+PS C:\Users\ADMIN\Downloads\mcino-Introduction-to-Git-and-GitHub> Get-Content README.md
+# Introduction to Git and GitHub
+
+## Simple Interest Calculator
+
+A calculator that calculates simple interest given principal, annual rate of interest and time period in years.
+
+```
+Input:
+   p, principal amount
+   t, time period in years
+   r, annual rate of interest
+Output
+   simple interest = p*t*r
+```
+
+_Â© 2022 XYZ, Inc._
+PS C:\Users\ADMIN\Downloads\mcino-Introduction-to-Git-and-GitHub> git checkout -b bug-fix-typo
+Switched to a new branch 'bug-fix-typo'
+PS C:\Users\ADMIN\Downloads\mcino-Introduction-to-Git-and-GitHub> notepad README.md
+PS C:\Users\ADMIN\Downloads\mcino-Introduction-to-Git-and-GitHub> git add README.md
+PS C:\Users\ADMIN\Downloads\mcino-Introduction-to-Git-and-GitHub> git commit -m "Fix typo in README"
+On branch bug-fix-typo
+nothing to commit, working tree clean
+PS C:\Users\ADMIN\Downloads\mcino-Introduction-to-Git-and-GitHub> git add README.md
+PS C:\Users\ADMIN\Downloads\mcino-Introduction-to-Git-and-GitHub> git commit -m "Fix typo in README"
+[bug-fix-typo 7629b9f] Fix typo in README
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+PS C:\Users\ADMIN\Downloads\mcino-Introduction-to-Git-and-GitHub> git checkout main
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+PS C:\Users\ADMIN\Downloads\mcino-Introduction-to-Git-and-GitHub> git merge bug-fix-typo
+Updating 4bcac06..7629b9f
+Fast-forward
+ README.md | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+PS C:\Users\ADMIN\Downloads\mcino-Introduction-to-Git-and-GitHub>
